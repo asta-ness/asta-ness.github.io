@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta</title>
+ 
+        <style>
+         .navbar {
+             position: fixed;
+             background-color: transparent;
+             width: 100%;
+             padding-top: 30px;
+             padding-right: 0px;
+             padding-left: 0px;
+             padding-bottom: 30px;
+             top: 0;
+             z-index: 100;
+             line-height: 20px;
+             margin-top: 0px;
+             margin-bottom: 0px;
+             margin-left: 0px;
+             margin-right: 0px;
+             text-decoration-line: none;
+             text-decoration-style: solid;
+             text-decoration-color: currentColor;
+           
+             box-sizing: border-box;
+
+            
+         } 
+         .inner-width {
+             max-width: 1300px;
+             margin: auto;
+             padding-left: 60px;
+             padding-right: 60px;
+             padding-top: 0px;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+         }
+         .logo   {
+            font-size: 40px;
+            font-weight: 100;
+            font-family: 'Great Vibes',sans-serif;
+            color: #222222;
+            cursor: pointer;
+        }
+        .navbar-menu a {
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Raleway',sans-serif;
+            color: #222222;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-left: 35px;
+            display: inline-flex;
+            box-sizing: border-box;
+            line-height: 20px;
+        }
+        .navbar-menu a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #de6900;
+            transition: width .3s;
+        }
+        .navbar-menu a:hover::after {
+            width: 100%;
+        }
+/*
+        img {
+            width: 400px;
+            border-radius: 50px;
+            
+            margin-right: 40px;
+        }
+        body {
+            background-color:lightblue;
+            opacity: 0.8;
+            margin: 0 auto;
+            max-width: 960px;
+            margin-top: 2.5em;
+            padding: 1.4em 0;
+            
+        }  
+       h1 {
+           font-size: 36pt;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+    */
+    </style>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="inner-width">
+        <a class="logo" href="#">AstaPasta</a>
+    </div>
+    <div class="navbar-menu"> 
+        <a href="#">Home</a>
+        <a href="#">Recipe</a>
+        <a href="#">Contact</a>
+    </div>
+    <section id="home">
+        <div class="content1">
+
+        </div>
+    </section>
+</nav>
+</body>
+</html>
