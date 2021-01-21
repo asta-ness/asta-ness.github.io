@@ -6,6 +6,14 @@
     <title>CSS test</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        @font-face {
+            font-family: 'great_vibesregular';
+            src: url('font/greatvibes-regular-webfont.woff2') format('woff2'),
+            url('font/greatvibes-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+}
         body {
             background-color: rgb(214, 167, 36);
             margin-left: 20px;
@@ -17,10 +25,11 @@
             border-radius: 50px;
                        
         }
-        .top_block {
+        .top-block {
             display: flex;
             justify-content: space-between;
             padding-bottom: 40px;
+         
             padding-top: 40px;
             margin-left: 25px;
             margin-right: 25px;
@@ -29,14 +38,24 @@
         .logo {
             font-size: 50px;
             font-weight: 100;
-            font-family: 'Great Vibes',sans-serif;
+            font-family: 'great_vibesregular',sans-serif;
             color: black;
-            cursor: pointer;
+            text-decoration: none;
+
+        }
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-left: 10px;
+            font-size: larger;
+            padding-top: 10%;
+                      
+        
         }
         .logo1 {
             font-size: 30px;
             font-weight: 100;
-            font-family: 'Great Vibes',sans-serif;
+            font-family: 'great_vibesregular',sans-serif;
             color: black;
             cursor: pointer;
         }
@@ -50,6 +69,7 @@
             margin-left: 35px;
             margin-right: 35px;
             margin-top: 20px;
+            margin-bottom: 20px;
 
         }
         .menu a{
@@ -58,19 +78,24 @@
             font-size: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin-left: 10px;
+            
         }
-        .main_block {
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-block {
             display: flex;
             justify-content: space-around;
         }
-        .main_content {
+        .main-container {
            display: flex; 
            flex-wrap: wrap;
            flex-grow: 10;
            padding-bottom: 30px;
       
         }
-        .content1 {
+        .container1 {
             display: flex;
             flex-direction: row;
             box-sizing: border-box;
@@ -80,37 +105,45 @@
             margin-left: 20%;
             
         }
-        .left_side {
+        .left-side {
             width: 30%;
         }
-        .right_side {
+        .right-side {
             width: 70%;
         }
-        .content2 {
+        .container2 {
             display: flex;
             flex-direction: column;
         }
         
            
-        .content3 {
+        .container3 {
             display: flex;
             flex-direction: column;
             
         }
 
-        .social_container {
+        .social-container {
             display: flex;
-            flex-direction: column;           
+            flex-direction: column;
+            padding: 30px; 
+            margin-top: 10%;          
         }
-        
-        
+        .social-container a {
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+
+        }   
         
     </style>
 </head>
 <body>
-    <div class="top_block">
-        <div class="first_block">
-            <a class="logo" href="#">First test</a>
+    <div class="top-block">
+        <div class="first-block">
+            <a class="logo" href="#">AstaPasta</a>
         </div>
         <div class="menu">
             <a href="#">Home</a>
@@ -119,55 +152,48 @@
         </div>
         
     </div>
-    <div class="main_block">
-        <div class="main_content">
-        <div class="content1">
+    <div class="main-block">
+        <div class="main-container">
+        <div class="container1">
             <img src="images/pasta.jpg" alt="photo">
+            <h1>making fresh pasta</h1>
 
         </div>
-        <div class="content2 left_side">
-            <div class="content2_logo">
+        <div class="container2 left-side">
+            <div class="container2-logo">
                 <p class="logo1" >Ingredients</p>
 
             </div>
-            <div class="content2_text">
+            <div class="container2-text">
                 <ul>
-                    <li>rrrrff</li>
-                    <li>gggg</li>
-                    <li>rrrr</li>
-                    <li>gggg</li>
+                    <li>500g flour </li>
+                    <li>5 eggs</li>
                 </ul>
             </div>
             
 
         </div>
-        <div class="content3 right_side">
-            <div class="content3_logo">
+        <div class="container3 right-side">
+            <div class="container3-logo">
                 <p class="logo1" >Metods</p>
 
             </div>
-            <div class="content3_text">
+            <div class="container3-text">
                 <ol>
-                    <li>rrgddjfjrtfgrth hyrtete dthre wstysde sdretsg rewaehyrtete dthre wstysde sdretsg rewaehyrtete dthre wstysde sdretsg rewaerwss zwaeswdsrr</li>
-                    <li>gggg</li>
-                    <li>rrrr</li>
-                    <li>gggg</li>
+                    <li>Sift the flour onto a works surface and forming it into "a volcano"-shaped mound with a well in the centre.  </li>
+                    <li>Break the eggs into this well. </li>
+                    <li>Incorporate the eggs into the flour with a fork and your hands. Gradually drawing the flour into the eggs mixture until it forms a coarse paste.</li>
+                    <li>Knead dough, work the dough for 10-15 minutes until the consistency is smooth and elastic.</li>
+                    <li>Wrap the dough in clingfilm and leave it to rest for at least half an hour.</li>
                 </ol>
             </div>
             
         </div>
         </div>
-        <div class="social_container">
-            
-        <!--
-         <ul>
-            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        </ul>  
-        -->
+        <div class="social-container">
+                 
         <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
         </div>
         
         
