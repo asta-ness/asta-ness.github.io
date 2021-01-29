@@ -1,0 +1,213 @@
+
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('../font/greatvibes-regular-webfont.woff2') format('woff2'),
+    url('../font/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+        }
+@media screen and (max-width: 480px) {
+    .menu {
+        text-align: right;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menu ul a {
+       font-size: 12px;
+       
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        /*position: absolute;*/
+        top: 0;
+       right: 0;
+  
+        /*line-height: 60px;*/
+    }
+    #menuToggle:checked ~ div ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+.menu div ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.menu ul a {
+    height: inherit;
+    color: #222;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.menu ul a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#menuToggle {
+    display: none;
+}
+
+
+
+
+
+body {
+    background-color: #f8f2e7;                     
+    }
+img {
+  width: 100%;
+   border-radius: 10px;
+}
+
+.title {
+    text-align: left;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: medium;
+    padding-top: 10%;     
+}
+.logo1 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'great_vibesregular',sans-serif;
+    color: black;
+    
+}
+.title span {            
+    text-decoration: none;
+    text-transform: uppercase;       
+}
+.title {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    
+  }
+  .dropdown-content div{
+     font-size: 12pt;
+     padding: 0.2rem;
+  }
+  .title:hover .dropdown-content {
+    display: block;
+  }
+
+.top-block {
+   display: flex;
+   justify-content: space-between;
+
+   position: relative;
+
+   /* padding-top: 40px;
+   margin-left: 25px;
+   margin-right: 0px;
+   */
+   background-color: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'great_vibesregular',sans-serif;
+    color: black;
+    text-decoration: none;
+
+}
+
+.main-block {
+    display: grid;
+    grid-template-columns: auto;
+  /*  flex-wrap: wrap;
+    justify-content: space-between; */
+}
+.main-container {
+   display: grid; 
+   grid-template-columns: auto;
+ /*  flex-wrap: wrap;
+   flex-grow: 10;*/
+   
+
+}
+.container-image-and-title {
+    display: grid;
+  
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: left;
+    
+    
+}
+        
+.container-ingrediens {
+    display: grid;
+    grid-row: auto;
+}
+
+   
+.container-metods {
+    display: grid;
+     
+}
+
+.social-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+  }
+   
+ 
+.social-container a {
+  
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+
+}   
+

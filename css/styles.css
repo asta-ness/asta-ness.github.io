@@ -5,14 +5,12 @@
     font-weight: normal;
     font-style: normal;
         }
+        
+
 
 body {
-    
-    background-color: #f8f2e7;                     
-    margin-left: 20px;
-    margin-right: 20px;
-  
-}
+     background-color: #f8f2e7;                     
+     }
 img {
     width: 400px;
     border-radius: 10px;
@@ -22,12 +20,14 @@ img {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
+    position: relative;
  
     padding-top: 40px;
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 50px;
     background-color: transparent;
 }
+
 .logo {
     font-size: 50px;
     font-weight: 100;
@@ -40,30 +40,43 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     margin-left: 10px;
-    font-size: larger;
-    padding-top: 10%;
-            
+    font-size: medium;
+    padding-top: 10%;         
 }
+
 .logo1 {
     font-size: 30px;
     font-weight: 100;
     font-family: 'great_vibesregular',sans-serif;
     color: black;
-    cursor: pointer;
 }
-.menu {
-    justify-content: center;
+
+.menu-icon {
+    display: none;
+}
+#menuToggle {
+    display: none;
+} 
+
+.menu div ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-transform: uppercase;
     text-decoration: none;
-    
-    
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+
 .menu a{
     text-decoration: none;
     color: #000;
@@ -76,15 +89,17 @@ h1 {
     background-color: #ddd;
     color: black;
 }
+
 .main-block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .main-container {
    display: flex; 
    flex-wrap: wrap;
    flex-grow: 10;
-   padding-bottom: 30px;
+   
 
 }
 .container-image-and-title {
